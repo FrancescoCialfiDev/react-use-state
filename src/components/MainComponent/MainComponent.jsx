@@ -1,5 +1,6 @@
 import ButtonComponent from "../ButtonsComponent/ButtonComponent";
 import languages from "../../data/languages";
+import TextComponent from "../TextComponent/TextComponent";
 
 function MainComponent() {
 
@@ -18,8 +19,7 @@ function MainComponent() {
                         </div>
 
                         <div className="mt-3 border rounded-2 p-4 ">
-                            <h4>HTML</h4>
-                            <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+                            <TextComponent array={languages} />
                         </div>
                     </div>
 

@@ -10,8 +10,6 @@ function ButtonComponent({ array }) {
         )
     )
 
-
-
 }
 
 export default ButtonComponent;
