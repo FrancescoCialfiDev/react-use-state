@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import MainComponent from './components/MainComponent'
+import MainComponent from './components/MainComponent/MainComponent'
 
 function App() {
   return (
