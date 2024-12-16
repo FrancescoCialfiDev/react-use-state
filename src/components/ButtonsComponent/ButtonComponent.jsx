@@ -1,15 +1,15 @@
-//import { useState } from "react";
+import { useState } from "react";
 function ButtonComponent({ array }) {
-
-
-
+    let [color, changecolor] = useState("btn-primary")
     const newArray = [...array]
 
     return (
 
+        // Al click del bottono dobbiamo cambiare dinamicamente il colore:
+
         newArray.map((element) =>
             <>
-                < button key={element.id} type="button" className="btn btn-primary mx-1">{element.title}</ button >
+                < button key={element.id} type="button" className={`btn ${color} mx-1`} onClick={() => { changecolor("btn-warning") }}>{element.title}</ button >
             </>
         )
     )
