@@ -1,0 +1,14 @@
+main {
+  height: 100vh;
+}
+.title {
+  background-color: rgb(248, 248, 248);
+}
+.buttons {
+  margin: 0 auto;
+  width: 90%;
+  padding: 40px 0;
+}
+body {
+  background-color: grey;
+}
