@@ -1,9 +1,11 @@
+import { useState } from "react";
 import ButtonComponent from "../ButtonsComponent/ButtonComponent";
 import languages from "../../data/languages";
 import TextComponent from "../TextComponent/TextComponent";
 
 function MainComponent() {
 
+    const [activeLanguage, setActiveLanguage] = useState(languages[0])
 
     return (
 
@@ -15,11 +17,11 @@ function MainComponent() {
                     </div>
                     <div className="corpo">
                         <div className="buttons d-flex">
-                            <ButtonComponent array={languages} />
+                            <ButtonComponent array={languages} activeLanguage={activeLanguage} setActiveLanguage={(language) => setActiveLanguage(language)} />
                         </div>
 
                         <div className="mt-3 border rounded-2 p-4 ">
-                            <TextComponent array={languages} />
+                            <TextComponent activeLanguage={activeLanguage} />
                         </div>
                     </div>
 
