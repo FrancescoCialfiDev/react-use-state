@@ -5,7 +5,7 @@ import TextComponent from "../TextComponent/TextComponent";
 
 function MainComponent() {
 
-    const [activeLanguage, setActiveLanguage] = useState(languages[0])
+    const [activeLanguage, setActiveLanguage] = useState(false)
 
     return (
 
